@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mythrri | To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>✅ My To-Do List</h1>
+    <p>Plan your day like a pro!</p>
+
+    <div class="input-box">
+      <input type="text" id="taskInput" placeholder="Add new task... Ex: Study Python">
+      <button onclick="addTask()">Add ➕</button>
+    </div>
+
+    <div class="filters">
+      <button onclick="showAll()">All</button>
+      <button onclick="showActive()">Pending</button>
+      <button onclick="showDone()">Done</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <p id="count">Total Tasks: 0 | Done: 0</p>
+    <button class="clear" onclick="clearAll()">Clear All 🗑️</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
